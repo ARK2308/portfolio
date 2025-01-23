@@ -1,0 +1,159 @@
+/* General styles for #about */
+#about {
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: #000000;  /* Dark background */
+    color: #f1f1f1;  /* Light text for contrast */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+
+/* Name Section Styling with Gradient */
+.intro p strong {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #ff6b6b, #ffd700); /* Gradient for name */
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Typography for headings */
+.skills h2 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: #ffae00; /* Gold color for headers */
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+/* Paragraph styling */
+#about p {
+    width: 60%;
+    margin-top: 10vh;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #c6c2c2;
+    background-color: transparent;
+    letter-spacing: 0.5px;
+}
+
+/* Skills Section */
+.skills {
+    width: 100%;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.skill-btns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjust size of buttons */
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+}
+
+.skill-btns button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    /* border: 2px solid #ffd700; */
+    background-color: transparent;
+    color: #ffd700;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 140px;
+    height: 140px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    will-change: transform;
+}
+
+.skill-btns button:hover {
+    transform: translateY(-10px) scale(1.05); /* Lift and scale */
+    box-shadow: 0 8px 15px rgba(255, 215, 0, 0.4);
+    background-color: rgba(255, 215, 0, 0.1); /* Highlight on hover */
+}
+
+.skill-btns button img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.skill-btns button:hover img {
+    transform: rotate(360deg); /* Rotate icons on hover */
+}
+
+/* Experience and Achievements */
+.experience ul, .achievements ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+.experience h3, .achievements h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.6rem;
+    color: #ffd700;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: #f4d03f; /* Highlighted text */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #dbe5fa;
+}
+
+/* Leetcode Section */
+.leetcode {
+    width: 85vw;
+    margin: 10vh 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    #about {
+        padding-bottom: 10vh;
+        position: relative;
+    }
+
+    #about p {
+        width: 100%;
+        margin-top: 5vh;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .skills h2 {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+
+    .skill-btns button {
+        width: 100px;
+        height: 100px;
+        font-size: 1rem;
+    }
+
+    .skill-btns {
+        padding: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}

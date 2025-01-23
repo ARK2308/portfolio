@@ -1,0 +1,24 @@
+
+.cursor{
+    width: 30px;
+    height: 30px;
+    /* background: radial-gradient(#0A192F,#0a2143,#8892B0); */
+    background-color: #b1c3ea;
+    border-radius: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* filter: blur(100px); */
+    position: fixed;
+    mix-blend-mode: difference;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+@media (max-width:600px) {
+   .cursor{
+    display: none;
+   }
+
+}

@@ -1,0 +1,51 @@
+.page1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page1 .intro{
+    width: 60%;
+    margin-top: 20vh;
+    margin-left: 20px;
+}
+
+.intro p{
+    font-size: 30px;
+}
+
+.page1 .intro h2 {
+    font-size: 4vw;
+    background: linear-gradient(90deg, rgb(253, 42, 39), rgb(255, 153, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 3vh 0 0 2vh;
+}
+
+
+.page1 .intro .para{
+    font-size: 1.6vw;
+    font-weight: 100px;
+    margin:3vh 6vw 0 0;
+}
+
+@media (max-width:600px) {
+    .page1{
+        padding: 0;
+        margin: 0;
+    }
+    .page1 .intro{
+        padding: 0;
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+   .page1 .intro h2{
+        font-size: 15vw;
+    }
+
+    .page1 .intro .para{
+        font-size: 5vw;
+    }
+}
