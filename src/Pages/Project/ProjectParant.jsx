@@ -2,13 +2,16 @@ import React from "react"
 import AnimatedProject from "./AnimatedProject"
 import Footer from '../../Components/Footer/Footer'
 import ReactProject from "./ReactProject"
+import BackendProject from "./BackendProject"
 
-const ProjectParent = ()=>{
+const ProjectParent = () => {
 
-    return(
+    return (
         <div>
             <ReactProject />
-            <AnimatedProject/>
+            <BackendProject />
+
+            <AnimatedProject />
             <Footer />
         </div>
     )
