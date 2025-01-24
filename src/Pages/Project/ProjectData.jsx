@@ -70,7 +70,7 @@ const projectData = [
     {
         projName: "My Portfolio",
         img: portfolio,
-        live: "https://celadon-youtiao-c1830a.netlify.app/",
+        live: "https://abdulraheem-portfolio.netlify.app/",
         github: "",
         skilused: ["React", "JavaScript", "HTML", "CSS"],
         disc: "I've crafted my portfolio to exhibit diverse projects and skills, offering insight into my capabilities. Learn more about me through this platform, complete with links to my socials. Explore my journey and discover how I bring creativity and expertise to each endeavor.",
